@@ -3,8 +3,8 @@ sudo nix --experimental-features "nix-command flakes" run github:nix-community/d
 
 sudo mkdir /mnt/{home,nix}
 
-mount -o subvol=@ /dev/sda3 /mnt
-mount -o subvol=@home /dev/sda3 /mnt/home
-mount -o subvol=@nix  /dev/sda3 /mnt/nix
+sudo mount -o subvol=@ /dev/sda3 /mnt
+sudo mount -o subvol=@home /dev/sda3 /mnt/home
+sudo mount -o subvol=@nix  /dev/sda3 /mnt/nix
 
 nixos-generate-config --root /mnt
