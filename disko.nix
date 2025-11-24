@@ -30,7 +30,7 @@
               size = "100%";
               content = {
                 type = "filesystem";
-                format = "btrsf";
+                format = "btrfs";
                 mountpoint = "/";
               };
             };
